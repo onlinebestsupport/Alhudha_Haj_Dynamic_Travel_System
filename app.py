@@ -44,6 +44,11 @@ def dashboard():
 # ======================
 # REQUIRED FOR RAILWAY
 # ======================
+@app.route("/admin/traveler/add", methods=["GET", "POST"])
+def add_traveler():
+    if request.method == "POST":
+        return "Traveler saved (database coming next) ✅"
+    return render_template("admin/traveler_form.html")
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port)
