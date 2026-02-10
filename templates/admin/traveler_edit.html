@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Traveler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
 
+<h2>Edit Traveler</h2>
+
+<form method="POST">
+
+<h3>Basic Details</h3>
+<label>Surname</label>
+<input name="surname" value="{{ traveler[2] }}">
+
+<label>Given Name</label>
+<input name="given_name" value="{{ traveler[3] }}">
+
+<label>Nationality</label>
+<input name="nationality" value="{{ traveler[4] }}">
+
+<label>Gender</label>
+<input name="gender" value="{{ traveler[5] }}">
+
+<label>Date of Birth</label>
+<input type="date" name="dob" value="{{ traveler[6] }}">
+
+<label>Place of Birth</label>
+<input name="place_of_birth" value="{{ traveler[7] }}">
+
+<hr>
+
+<h3>Passport Details</h3>
+<label>Passport Number</label>
+<input name="passport_no" value="{{ traveler[8] }}">
+
+<label>Name on Passport</label>
+<input name="passport_name" value="{{ traveler[9] }}">
+
+<label>Place of Issue</label>
+<input name="passport_issue_place" value="{{ traveler[10] }}">
+
+<label>Date of Issue</label>
+<input type="date" name="passport_issue_date" value="{{ traveler[11] }}">
+
+<label>Date of Expiry</label>
+<input type="date" name="passport_expiry_date" value="{{ traveler[12] }}">
+
+<hr>
+
+<h3>Family Details</h3>
+<label>Father Name</label>
+<input name="father_name" value="{{ traveler[13] }}">
+
+<label>Mother Name</label>
+<input name="mother_name" value="{{ traveler[14] }}">
+
+<label>Spouse Name</label>
+<input name="spouse_name" value="{{ traveler[15] }}">
+
+<hr>
+
+<h3>Contact Details</h3>
+<label>Mobile</label>
+<input name="mobile" value="{{ traveler[16] }}">
+
+<label>Email</label>
+<input name="email" value="{{ traveler[17] }}">
+
+<label>Address</label>
+<textarea name="address">{{ traveler[18] }}</textarea>
+
+<hr>
+
+<h3>ID & Medical</h3>
+<label>Aadhaar</label>
+<input name="aadhaar" value="{{ traveler[19] }}">
+
+<label>PAN</label>
+<input name="pan" value="{{ traveler[20] }}">
+
+<label>Vaccine Status</label>
+<input name="vaccine_status" value="{{ traveler[21] }}">
+
+<hr>
+
+<h3>Admin Notes</h3>
+<textarea name="admin_notes">{{ traveler[31] }}</textarea>
+
+<br>
+
+<button type="submit">Update Traveler</button>
+<a href="/traveler/list">Cancel</a>
+
+</form>
+
+</body>
+</html>
