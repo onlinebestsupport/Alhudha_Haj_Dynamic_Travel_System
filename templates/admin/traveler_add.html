@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Traveler</title>
+</head>
+<body>
 
+<h2>Add Traveler</h2>
+
+<form method="POST" action="/traveler/add">
+
+<h3>Basic Details</h3>
+Surname: <input name="surname"><br>
+Given Name: <input name="given_name"><br>
+Gender: <input name="gender"><br>
+Date of Birth: <input type="date" name="dob"><br>
+Nationality: <input name="nationality"><br>
+Marital Status: <input name="marital_status"><br>
+
+<h3>Passport Details</h3>
+Passport No: <input name="passport_no"><br>
+Place of Issue: <input name="passport_place_issue"><br>
+Issue Date: <input type="date" name="passport_issue_date"><br>
+Expiry Date: <input type="date" name="passport_expiry_date"><br>
+Original Passport:
+<select name="passport_original">
+  <option value="true">Yes</option>
+  <option value="false">No</option>
+</select><br>
+
+<h3>Contact</h3>
+Phone: <input name="phone"><br>
+WhatsApp: <input name="whatsapp"><br>
+Email: <input name="email"><br>
+Address: <input name="address"><br>
+City: <input name="city"><br>
+State: <input name="state"><br>
+Country: <input name="country"><br>
+Pincode: <input name="pincode"><br>
+
+<h3>Haj / Umrah</h3>
+Batch Name: <input name="batch_name"><br>
+Travel Type: <input name="travel_type"><br>
+Mahram Name: <input name="mahram_name"><br>
+Relation: <input name="relation"><br>
+Medical Notes: <input name="medical_notes"><br>
+
+<h3>Admin</h3>
+Admin Notes: <input name="admin_notes"><br>
+Status: <input name="status"><br>
+
+<br>
+<button type="submit">Save Traveler</button>
+
+</form>
+
+</body>
+</html>
