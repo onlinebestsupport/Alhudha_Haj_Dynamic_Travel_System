@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Traveler</title>
+</head>
+<body>
+
+<h2>Traveler Registration Form</h2>
+
+<form method="POST">
+
+<!-- BASIC DETAILS -->
+<h3>Basic Details</h3>
+<input name="surname" placeholder="Surname / First Name"><br><br>
+<input name="given_name" placeholder="Given Name / Last Name"><br><br>
+<input name="nationality" placeholder="Nationality"><br><br>
+
+<select name="gender">
+    <option>Male</option>
+    <option>Female</option>
+</select><br><br>
+
+<input name="dob" placeholder="Date of Birth"><br><br>
+<input name="place_birth" placeholder="Place of Birth"><br><br>
+
+<!-- PASSPORT -->
+<h3>Passport Details</h3>
+<input name="passport_no" placeholder="Passport Number"><br><br>
+<input name="passport_name" placeholder="Name on Passport"><br><br>
+<input name="place_issue" placeholder="Place of Issue"><br><br>
+<input name="date_issue" placeholder="Date of Issue"><br><br>
+<input name="date_expiry" placeholder="Date of Expiry"><br><br>
+
+<select name="passport_status">
+    <option>Valid</option>
+    <option>Expired</option>
+</select><br><br>
+
+<!-- FAMILY -->
+<h3>Family Details</h3>
+<input name="father_name" placeholder="Father Name"><br><br>
+<input name="mother_name" placeholder="Mother Name"><br><br>
+<input name="spouse_name" placeholder="Spouse Name"><br><br>
+
+<!-- CONTACT -->
+<h3>Contact Details</h3>
+<input name="address" placeholder="Passport Address"><br><br>
+<input name="mobile" placeholder="Mobile Number"><br><br>
+<input name="email" placeholder="Email"><br><br>
+
+<!-- ID / MEDICAL -->
+<h3>ID & Medical</h3>
+<input name="aadhaar" placeholder="Aadhaar Number"><br><br>
+
+<select name="aadhaar_linked">
+    <option>Yes</option>
+    <option>No</option>
+</select><br><br>
+
+<input name="pan" placeholder="PAN Number"><br><br>
+
+<select name="wheelchair">
+    <option>No</option>
+    <option>Yes</option>
+</select><br><br>
+
+<select name="vaccine">
+    <option>Completed</option>
+    <option>Not Completed</option>
+</select><br><br>
+
+<!-- ADMIN NOTES -->
+<h3>Admin Notes</h3>
+<textarea name="admin_notes" placeholder="Admin notes"></textarea><br><br>
+
+<button type="submit">Save Traveler</button>
+
+</form>
+
+<br>
+<a href="/admin/dashboard">Back to Dashboard</a>
+
+</body>
+</html>
